@@ -619,12 +619,14 @@ textarea.input100 {
   position: absolute;
   width: 100%;
   max-width: 92%;
-  height: 95%;
+  height: 100%;
+  max-height: 91%;
   right: 0;
   top: 0;
   bottom: 0;
   background-color: #fa4251;
   z-index: -1;
+  margin-top: 2rem;
 }
 
 
