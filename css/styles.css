@@ -61,7 +61,7 @@ a {
 .astrodivider {
   margin: .8rem auto 2rem auto;
   width: 100%;
-  max-width: 180px;
+  max-width: 10rem;
   height: 3px;
   position: relative;
   background-color: #fa4251;
@@ -163,7 +163,7 @@ a {
   padding: 3rem 0 5rem 0;
   background: url(../img/xhome-banner.jpg.pagespeed.ic.kpFJXmO-w7.webp);
   background-size: cover;
-  background-position: center;
+  background-position: center center;
   background-repeat: no-repeat;
   z-index: 1;
 }
@@ -550,16 +550,15 @@ textarea.input100 {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  margin-bottom: 1rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1)
 }
 
 .service-box i {
   color: #fe4a55;
   font-size: 2.8rem;
-  border-bottom-left-radius: 50%;
-  border-bottom-right-radius: 50%;
   border-radius: 50%;
   border-bottom: 4px solid #334f6c;
-  padding: 2.5rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -582,7 +581,7 @@ textarea.input100 {
 .about-gre {
   padding: 3rem 0;
   position: relative;
-  background-color: #fffaf3;
+  background-color: #fffaf9af;
   overflow: hidden;
 }
 
@@ -672,26 +671,296 @@ textarea.input100 {
   display: inline-block
 }
 
-/* 
-.about-image::before {
-  content: "";
-  position: absolute;
+/* ***********gre-important-section*********** */
+/* ************why is gre important section*************** */
+.gre-imp-section {
+  padding: 3rem 0;
+  position: relative;
+}
+
+.gre-imp-box {
+  padding: 0 1rem 1rem 1rem;
+  position: relative;
+}
+
+.gre-imp-box li {
+  display: flex;
+  justify-content: center;
+  text-align: left;
+  padding: .2rem 0;
+  margin-bottom: 20px;
+}
+
+.gre-imp-box i {
+  font-size: 1.6rem;
+  color: #fa4251;
+  margin-right: 1rem;
+  position: relative;
+  z-index: 1;
+}
+
+.gre-imp-box img {
   width: 100%;
-  max-width: 93%;
+}
+
+/* 
+.gre-imp-box i::before {
+  content: "";
+  width: 100%;
   height: 100%;
-  max-height: 93%;
-  left: 0;
-  top: 0;
-  bottom: 0;
+  position: absolute;
   background-color: #fa4251;
+  top: 0;
+  left: 0;
   z-index: -1;
-  margin-right: 35px;
 } */
 
+.gre-imp-box p {
+  font-size: 1.2rem;
+  color: #42454a;
+  margin: 0;
+  padding: 3px 0 0 0;
+  line-height: 1.2;
+  letter-spacing: 1px;
+}
+
+/* ************schedule section*************** */
+.schedule-section {
+  padding: 3rem 0;
+  background-color: #fffaf9af;
+}
+
+.schedule-box {
+  padding: .5rem 1.2rem;
+  background: transparent;
+  border-radius: 50px;
+  margin: 1rem;
+
+}
+
+.schedule-head {
+  padding: 1.5rem 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(165deg, #fa4658c0 40%, #42454a 140%);
+  position: relative;
+  border-radius: 50px 50px 0 0;
+  box-shadow: 0px 0px 10px #00234749;
+  position: relative;
+}
+
+.schedule-head h2 {
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+.schedule-body {
+  padding: 2rem 1.2rem;
+  position: relative;
+  background-color: #fff;
+  border-radius: 0 0 50px 50px;
+  box-shadow: 0px 2px 10px 0 #00234749;
+  transition: all 0.4s ease;
+}
+
+.schedule-body:hover {
+  box-shadow: 0 14px 12px 0 #00234762;
+  transition: all 0.4s ease;
+}
+
+
+.schedule-body h3 {
+  font-size: 1.5rem;
+  color: #221638;
+  margin-bottom: 10px;
+}
+
+.schedule-body span {
+  font-size: 1.25rem;
+  color: #3d3636;
+}
+
+/* ************pricing plan for french************ */
+
+.pricing-section {
+  padding: 3rem 0;
+  background-color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+
+.pricing-box {
+  padding: 2rem 1.5rem;
+  background-color: #fff;
+  box-shadow: 0px 0px 17px 3px #334f6c3a;
+  position: relative;
+  transition: all 0.3s ease;
+  z-index: 1;
+}
+
+.pricing-box::before {
+  content: "";
+  position: absolute;
+  width: 105%;
+  height: 105%;
+  background-color: #fa425156;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  z-index: -5;
+}
+
+.pricing-box:hover {
+  box-shadow: 0px 0px 17px 3px #334f6c69;
+  transition: all 0.3s ease;
+}
+
+.pricing-box h3 {
+  font-size: 2.2rem;
+  font-weight: 600;
+  color: #fa4251;
+  letter-spacing: 1px;
+  margin-bottom: 5px;
+}
+
+.pricing-box p {
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  color: #5b5656;
+  margin-bottom: 5px;
+}
+
+.pricing-box span {
+  color: #334f6c;
+  font-size: 1.6rem;
+  font-weight: 500;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  width: 100%;
+  max-width: 130px;
+  height: 130px;
+  margin: 0 auto 1rem auto;
+  /* background: transparent; */
+  box-shadow: inset 0 0 10px #00234752;
+
+}
+
+.pricing-list {
+  margin: .3rem 0;
+}
+
+.pricing-list li {
+  margin-bottom: 2px;
+  padding: .4rem 0 .4rem 1.5rem;
+  position: relative;
+}
+
+.pricing-list li::before {
+  content: "\f064";
+  font-family: fontAwesome;
+  font-size: 1.6rem;
+  position: absolute;
+  left: 10px;
+  top: 0;
+  color: #fa4251;
+}
+
+.pricing-list li h5 {
+  font-size: 1.25rem;
+  color: #3d3636;
+  font-weight: 400;
+}
+
+/* **********faq section********* */
+
+.faq-section {
+  padding: 3rem 0;
+  position: relative;
+  background-color: #fffaf9af;
+}
+
+
+.faq-content {
+  text-align: left;
+}
+
+.btn-link {
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+.btn-link:hover,
+.btn-link:focus {
+  text-decoration: none;
+  box-shadow: none;
+}
+
+.card {
+  margin-bottom: 5px;
+}
+
+.card-body {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid rgba(0, 0, 0, .125);
+}
+
+.accordion h4 {
+  font-size: 1.1rem;
+  color: #002347;
+  background-color: #f7f7f7;
+  display: inline-block;
+}
+
+.accordion h5 {
+  font-size: 1rem;
+  color: #fa4251;
+  display: inline-block;
+  font-size: 400;
+}
+
+.faq-content span {
+  color: #fff;
+  margin-right: 1rem;
+  font-size: 1.5rem;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+
+.faq-content .ques {
+  background-color: #334f6cde;
+  font-size: 1.2rem;
+}
+
+.faq-content .ans {
+  background-color: #fa4251e1;
+  font-size: 1.2rem;
+}
+
+.faq-content hr {
+  max-width: 3rem;
+  height: 2px;
+  background-color: #fa4251;
+  margin: .5rem 0 1rem 0;
+}
 
 /* ***************media querries for responsive*************** */
 
 @media (max-width: 576px) {
+
+  .main-section {
+    padding: 0;
+  }
+
+  .about-gre h3 {
+    margin-bottom: 2rem;
+  }
+
   .alert-validate::before {
     padding: 0 20px;
   }
@@ -700,6 +969,97 @@ textarea.input100 {
   .btn-hide-validate {
     right: 10px;
   }
+}
+
+
+@media(max-width:466px) {
+  .main-section {
+    background-image: none;
+  }
+
+  .top-head {
+    background: url(../img/xhome-banner.jpg.pagespeed.ic.kpFJXmO-w7.webp);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+
+  .main-head-content {
+    padding: 4rem 0 6rem 0;
+  }
+
+  .main-head-content h1 {
+    font-size: 1.8rem;
+  }
+
+  .schedule-body h3 {
+    font-size: 1.3rem;
+  }
+
+  .schedule-body span {
+    font-size: 1.15rem;
+    font-weight: 500;
+  }
+
+  .pricing-list li h5 {
+    font-size: 1.15rem;
+  }
+}
+
+@media(max-width:376px) {
+  .about-gre h3 {
+    margin-bottom: 2rem;
+  }
+
+  .gre-imp-box i {
+    font-size: 1.6rem;
+  }
+
+  .gre-imp-box li {
+    margin-bottom: .8rem;
+  }
+
+  .gre-imp-box p {
+    font-size: 1.15rem;
+  }
+
+  .schedule-box {
+    padding: 0;
+  }
+
+  .schedule-head {
+    padding: 1rem 1.4rem;
+  }
+
+  .schedule-body {
+    padding: 1rem;
+  }
+
+  .schedule-body h3 {
+    font-size: 1.2rem;
+  }
+
+  .schedule-body span {
+    font-size: 1.1rem;
+    font-weight: 500;
+  }
+
+  .pricing-list li::before {
+    left: -10px;
+  }
+
+  .pricing-box span {
+    font-size: 1.8rem;
+  }
+
+  .pricing-list li h5 {
+    font-size: 1.1rem;
+  }
+
+  .pricing-box p {
+    font-size: 1rem;
+  }
+
 }
 
 @media (max-width:5000px) and (min-width:1400px) {
