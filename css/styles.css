@@ -537,8 +537,10 @@ textarea.input100 {
 
 /* ******end of form section******* */
 
+/* ************service section*************** */
 .service-section {
   padding: 3rem 0;
+  background: url(../img/1920x264_dotsbg3.png);
 }
 
 .service-box {
@@ -550,8 +552,9 @@ textarea.input100 {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  margin-bottom: 1rem;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1)
+  /* margin-bottom: 2rem; */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  height: 100%;
 }
 
 .service-box i {
@@ -583,6 +586,15 @@ textarea.input100 {
   position: relative;
   background-color: #fffaf9af;
   overflow: hidden;
+}
+
+.about-gre::before {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/1920x560_dotsbg4.png);
+  top: 0;
+  left: 0;
 }
 
 .about-gre p {
@@ -671,12 +683,14 @@ textarea.input100 {
   display: inline-block
 }
 
-/* ***********gre-important-section*********** */
 /* ************why is gre important section*************** */
 .gre-imp-section {
   padding: 3rem 0;
   position: relative;
+  background: url(../img/1920x560_dotsbg4.png);
+  background-position: center;
 }
+
 
 .gre-imp-box {
   padding: 0 1rem 1rem 1rem;
@@ -785,7 +799,10 @@ textarea.input100 {
 
 .pricing-section {
   padding: 3rem 0;
-  background-color: #fff;
+  background: url(../img/1920x815_dotsbg5.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   position: relative;
   overflow: hidden;
 }
@@ -797,18 +814,7 @@ textarea.input100 {
   position: relative;
   transition: all 0.3s ease;
   z-index: 1;
-}
-
-.pricing-box::before {
-  content: "";
-  position: absolute;
-  width: 105%;
-  height: 105%;
-  background-color: #fa425156;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  z-index: -5;
+  border: 12px solid #fa425149;
 }
 
 .pricing-box:hover {
@@ -845,8 +851,7 @@ textarea.input100 {
   height: 130px;
   margin: 0 auto 1rem auto;
   /* background: transparent; */
-  box-shadow: inset 0 0 10px #00234752;
-
+  box-shadow: inset 0 0 12px #00234760;
 }
 
 .pricing-list {
@@ -949,6 +954,38 @@ textarea.input100 {
   margin: .5rem 0 1rem 0;
 }
 
+/* *********loader********* */
+#loader {
+  position: fixed;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  width: 100%;
+  height: 100%;
+  filter: Alpha(opacity=80);
+  opacity: .8;
+  -moz-opacity: .8;
+}
+
+#modalprogress {
+  position: fixed;
+  top: 30%;
+  left: 45%;
+  margin: -33px 0 0 -88px;
+  color: #fff;
+  width: 0;
+  height: 24px;
+}
+
+#theprogress {
+  text-align: center;
+  filter: Alpha(opacity=100);
+  opacity: 1;
+  -moz-opacity: 1;
+}
+
+
 /* ***************media querries for responsive*************** */
 
 @media (max-width: 576px) {
@@ -969,10 +1006,22 @@ textarea.input100 {
   .btn-hide-validate {
     right: 10px;
   }
+
+  .service-box h4 {
+    font-size: 1.8rem;
+  }
 }
 
 
 @media(max-width:466px) {
+  h1 {
+    font-size: 2.4rem;
+  }
+
+  .astrodivider {
+    max-width: 7rem;
+  }
+
   .main-section {
     background-image: none;
   }
@@ -980,16 +1029,32 @@ textarea.input100 {
   .top-head {
     background: url(../img/xhome-banner.jpg.pagespeed.ic.kpFJXmO-w7.webp);
     background-size: cover;
-    background-position: center center;
+    /* background-position: bottom; */
     background-repeat: no-repeat;
+    z-index: 1;
+  }
+
+  .top-head::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.1);
+    width: 100%;
+    height: 100%;
+    z-index: -1;
   }
 
   .main-head-content {
-    padding: 4rem 0 6rem 0;
+    padding: 3rem 0 6rem 0;
   }
 
   .main-head-content h1 {
     font-size: 1.8rem;
+  }
+
+  .service-box h4 {
+    font-size: 1.5rem;
   }
 
   .schedule-body h3 {
@@ -1007,6 +1072,14 @@ textarea.input100 {
 }
 
 @media(max-width:376px) {
+  h1 {
+    font-size: 2.2rem;
+  }
+
+  .astrodivider {
+    max-width: 5rem;
+  }
+
   .about-gre h3 {
     margin-bottom: 2rem;
   }
@@ -1058,6 +1131,15 @@ textarea.input100 {
 
   .pricing-box p {
     font-size: 1rem;
+  }
+
+  .accordion h4 {
+    font-size: 1rem;
+  }
+
+  .main-head-content p {
+    color: #fe4a55;
+    text-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
   }
 
 }
